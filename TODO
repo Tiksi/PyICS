@@ -1,0 +1,4 @@
+So, first we need to make some wrappers for connections and such, wintermute is doing that I beleive.
+At the same time, we need to make a working client in 'debug mode' where everything is text based, but we have functions for all the commands to send to the server, and everything is working as it should.
+Once that is complete, or concurrently, we need to make the graphical side of the client, if we're going for native on the machine, we should probably use GTK for that, as it runs on every major distro. If we got the web route, ajax and such.
+At the same time as coding the gui, we need some art made for it so it doesnt look like some shit that came out of the 90s
