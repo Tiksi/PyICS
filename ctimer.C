@@ -11,7 +11,7 @@
 unsigned double clock_t, flag_on, flag_off;
 double elapsed;
 
-static PyObject *
+static PyObject *    // not really sure yet... tying to pass args back and forth from timer methods?
 ctimer_time(PyObject *self, PyObject *args)
 
 {
@@ -26,17 +26,17 @@ ctimer_time(PyObject *self, PyObject *args)
 
 
 
-int elapsed
+int elapsed    // working out the kinks for this method, using GNU clock
 {
 	
-	if (flag_match_start)
+	if (flag_match_start)    // get the signal of match start
 	{	
-	flag_on = clock();
-	if (flag_match_end)
+	flag_on = clock();           // start clock
+	if (flag_match_end)	// end cock at match close
 	{
 		flag_off = clock();
 		elapsed = ((double) (flag_off-flag_on)) / CLOCKS_PER_SEC;
-	}
+	}		// calculate elpased time
 	}
 	return elapsed;
 }
