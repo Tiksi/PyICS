@@ -1,0 +1,66 @@
+addresses
+
+The Internet Chess Servers are services providing you a means for playing
+chess with a wide range of players, both human and machine, from around the
+world. The following lists give both the server names and telnet IP numbers
+for the sites for chess servers.
+
+SERVERS USING A VERSION OF FICS
+-------------------------------
+
+Main sites maintained by this group of admins:
+
+  AICS: freechess.org 5000           (69.36.243.188)   Main US server
+        fics-admin@freechess.org     (email address)
+        http://www.freechess.org     (www site)
+
+Internet Chess Club (commercial chess server):
+  chessclub.com 5000                 (207.99.5.190 5000)   Pittsburgh, PA,US
+
+US Chess Live
+   168.93.100.57 5000                (168.93.100.57 5000)  Pittsburgh, PA,US
+
+Other chess-related servers:
+  nebin.eurecom.fr 5000 (193.55.112.8 5000) Fisher Random Chess Server
+
+OTHER USEFUL LOCATIONS
+----------------------
+
+WWW-servers
+
+  URL: http://www.freechess.org/
+  URL: http://chess.onenet.net/chess/
+  URL: http://www.zone.com/
+  URL: http://www.fide.com/
+  URL: http://www.brad.ac.uk/~mdcrowth/chess.html
+
+FTP-servers:
+
+  fics.freechess.org                (164.58.253.11) [main FICS ftp site]
+  ftp.math.uni-hamburg.de           (134.100.220.2)
+  ftp.daimi.aau.dk                  [for timeseal files for use on EICS]
+  ftp.mds.mdh.se                    [some of the files are in /pub/chess]
+
+CONNECTION INFORMATION
+----------------------
+
+To connect to a chess server:          telnet <server_address> 5000  (most
+                                       servers use the 5000 port; use a
+                                       different port if necessary)
+To connect to an anonymous ftp server: ftp <ftp_address> (at LOGIN type:   
+                                       ftp	 (or anonymous)  at PASSWORD
+                                       type: your_email_address)
+To connect to a www location:          Use your web browser (such as Internet
+                                       Explorer or Netscape) and go to the
+                                       URL address
+
+SEE ALSO
+--------
+
+ftp_hints inetchesslib links timeseal
+
+AUTHORS
+-------
+
+Created: 6 April 2005 MAd
+Last Modified: 27 February 2008 mhill
