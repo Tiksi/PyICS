@@ -11,7 +11,7 @@
 unsigned double clock_t, flag_on, flag_off;
 double elapsed;
 
-static PyObject *    // not really sure yet... tying to pass args back and forth from timer methods?
+static PyObject *    // not really sure yet... tying to pass args back and forth from timer to python string constructor?
 ctimer_time(PyObject *self, PyObject *args)
 
 {
