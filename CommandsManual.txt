@@ -1,0 +1,682 @@
+This is the FICS "usage" manual.  It contains all of the "usage" texts that
+are displayed when the command a user types is misformatted.  The general
+structure of each "usage" entry is as follows:
+
+  Command:  <command>
+  Purpose:  <purpose>
+  Usage:    <usage>
+  Examples: <example>
+
+This usage manual will be updated as soon as possible when new commands for
+users and/or new features of commands go online.
+
+Friar
+
+[Last modified: June 10, 1998 -- Friar]
+
+_____________________________________________________________________
+Command:  abort
+Purpose:  to request that the game be cancelled
+Usage:    abort
+Examples: abort
+_____________________________________________________________________
+Command:  accept
+Purpose:  agree to an offer made by a user or opponent
+Usage:    accept [1-n, all, abort, adjourn, draw, match, pause, player,
+          simul, switch, takeback]
+Examples: accept; accept 2; accept draw; accept Shane
+_____________________________________________________________________
+Command:  addlist
+Purpose:  add information to a list
+Usage:    addlist list information
+Alt:      +list information
+Examples: addlist noplay Friar; +noplay Friar
+_____________________________________________________________________
+Command:  adjourn
+Purpose:  to request an adjournment of a game; courtesy_adjourn when
+          opponent is out of time and may have lag problems
+Usage:    adjourn
+Examples: adjourn
+_____________________________________________________________________
+Command:  alias
+Purpose:  set/edit personal command alias; review alias or all aliases
+Usage:    alias [word [string]]
+Examples: alias; alias t1; alias t1 tell 1 @
+_____________________________________________________________________
+Command:  allobservers
+Purpose:  list users currently observing games on the server
+Usage:    allobservers [game,user]
+Examples: allobservers; allobservers 43; allobservers Hawk
+_____________________________________________________________________
+Command:  assess
+Purpose:  calculate expected changes to ratings from a chess match
+Usage:    assess [game# | user1 [user2 [lightning|blitz|standard|wild]]]
+Examples: assess; assess 23; assess Sparky; assess DAV Thanatos;
+          assess DAV Thanatos standard
+_____________________________________________________________________
+Command:  backward
+Purpose:  move backward in the game sequence as you examine a game
+Usage:    backward [#]     [default: 1]
+Examples: backward; backward 2
+_____________________________________________________________________
+Command:  bell
+Purpose:  toggles your 'bell' variable on/off (1/0)
+Usage:    bell
+Examples: bell
+_____________________________________________________________________
+Command:  best
+Purpose:  list the 20 highest rated players in the ratings categories
+Usage:    best [b|s|l|w|B]     [default: bsl]
+Examples: best; best s
+_____________________________________________________________________
+Command:  boards
+Purpose:  list available positions for starting a game
+Usage:    boards [category]
+Examples: boards; boards openings
+_____________________________________________________________________
+Command:  bsetup
+Purpose:  begin bsetup mode and execute special bsetup commands
+Usage:    bsetup [command]
+Examples: bsetup; bsetup wild 5; bsetup start; bsetup clear; bsetup done
+_____________________________________________________________________
+Command:  bugwho
+Purpose:  lists current bughouse games, partnerships and available partners
+Usage:    bugwho [g|p|u]
+Examples: bugwho; bugwho g; bugwho pu
+_____________________________________________________________________
+Command:  cbest
+Purpose:  displays 20 highest-rated computer players by chess category
+Usage:    cbest [b|s|l|w|B|S]     [default: bsl]
+Examples: cbest; cbest s
+_____________________________________________________________________
+Command:  clrsquare
+Purpose:  used in setup mode in order to empty a square (make it blank)
+Usage:    clrsquare square
+Examples: clrsquare e4; clrsquare h6
+_____________________________________________________________________
+Command:  clearmessages
+Purpose:  delete one or more stored messages from your message file
+Usage:    clearmessages user|#|m-n|*     [* will clear all messages]
+Examples: clearmessages Solid; clearmessages 8; clearmessages 3-7;
+          clearmessages *
+_____________________________________________________________________
+Command:  copygame
+Purpose:  copy a game so that it can be examined
+Usage:    copygame [user_name|number|o]
+Examples: copygame Sparky; copygame 7; copygame o; copygame
+_____________________________________________________________________
+Command:  crank
+Purpose:  displays rank (excluding computer accounts) for a player or
+          range of players
+Usage:    crank [user [b][s][l][w][B][S]] -OR- crank m-n [b][s][l][w][B][S] 
+          -OR- crank m [b][s][l][w][B][S]]           [default: bsl]
+Examples: crank; crank 50-100; crank 1800; crank s; crank cyee bs
+_____________________________________________________________________
+Command:  cshout
+Purpose:  send message to users who are open to receive cshouts
+Usage:    cshout message
+Examples: cshout Anyone for 2 5 rated?
+_____________________________________________________________________
+Command:  date
+Purpose:  lists both local date/time at the server and GMT date/time
+Usage:    date
+Examples: date
+_____________________________________________________________________
+Command:  decline
+Purpose:  decline (turn down) an offer made to you by a user
+Usage:    decline [1-n, all, abort, adjourn, draw, match, pause, player,
+          simul, switch, takeback]
+Examples: decline; decline 2; decline draw; decline cyee
+_____________________________________________________________________
+Command:  draw
+Purpose:  requests (or accepts) a draw offer; it may include a move 
+Usage:    draw [move]
+Examples: draw; draw Kf7
+_____________________________________________________________________
+Command:  eco
+Purpose:  display the type of opening used in the chess game
+Usage:    eco [game, name, e <eco code>, n <nic code>]
+Examples: eco; eco 23; eco Clovis; eco e A5; eco n FR.04
+_____________________________________________________________________
+Command:  examine
+Purpose:  start or review a game under examination mode
+Usage:    examine [player1 [player2, game_number, journal_slot]
+Examples: examine; examine river; examine TheDane sms; examine McKeork 7;
+          examine loon F
+_____________________________________________________________________
+Command:  finger
+Purpose:  display ratings and/or notes about yourself or another user
+Usage:    finger [user] [r][n]
+Examples: finger; finger TheViking; finger TheViking r; finger TheViking n
+_____________________________________________________________________
+Command:  flag
+Purpose:  claim a win when your opponent has run out of time
+Usage:    flag
+Examples: flag
+_____________________________________________________________________
+Command:  flip
+Purpose:  toggles board display between White-at-bottom and White-at-top
+Usage:    flip
+Examples: flip
+_____________________________________________________________________
+Command:  fmessage
+Purpose:  forward a message to a user
+Usage:    fmessages user message_#  [use # from your message list]
+Examples: fmessage DAV 3
+_____________________________________________________________________
+Command:  follow
+Purpose:  Automatically observe all of a user's games, or cancel this
+          function.
+Usage:    follow user; follow
+Examples: follow Binford; follow
+_____________________________________________________________________
+Command:  forward
+Purpose:  move forward in a sequence of moves in a game being examined
+Usage:    forward [#]       [default: 1]
+Examples: forward; forward 2
+_____________________________________________________________________
+Command:  games
+Purpose:  display information about games currently in progress
+Usage:    games [#, /[bBelsuw], string]     [default: all games]
+Examples: games; games 23; games sv; games sveshi; games /B; games /lw
+_____________________________________________________________________
+Command:  goboard
+Purpose:  in a simul match, move to a given player's board
+Usage:    goboard player|#
+Examples: goboard Shaughn; goboard 7
+_____________________________________________________________________
+Command:  handles
+Purpose:  lists registered handles beginning with a certain string
+Usage:    handles [string]
+Examples: handles; handles g
+_____________________________________________________________________
+Command:  hbest
+Purpose:  displays 20 highest-rated human players by chess category
+Usage:    hbest [b|s|l|w|B|S]     [default: bsl]
+Examples: hbest; hbest s
+_____________________________________________________________________
+Command:  help
+Purpose:  read a help file
+Usage:    help [string]
+Examples: help; help match
+_____________________________________________________________________
+Command:  history
+Purpose:  displays results of your or another user's recent games
+Usage:    history [user]
+Examples: history; history Rattlesnake
+_____________________________________________________________________
+Command:  hrank
+Purpose:  displays rank (excluding computer accounts) for a player or
+          range of players
+Usage:    hrank [user [b][s][l][w][B][S]] -OR- hrank m-n [b][s][l][w][B][S] 
+          -OR- hrank m [b][s][l][w][B][S]]           [default: bsl]
+Examples: hrank; hrank 50-100; hrank 1800; hrank s; hrank cyee bs
+_____________________________________________________________________
+Command:  inchannel
+Purpose:  lists the channels a user is in, or who is in a given channel, or
+          all users in all channels
+Usage:    inchannel [user|number]
+Examples: inchannel; inchannel Solid; inchannel 1
+_____________________________________________________________________
+Command:  it
+Purpose:  send message to users open to receive shouts
+Usage:    it message
+Examples: it thinks internet chess is wonderful!
+_____________________________________________________________________
+Command:  jkill
+Purpose:  erase games from your journal
+Usage:    jkill slot
+Examples: jkill A; jkill L
+_____________________________________________________________________
+Command:  journal
+Purpose:  display contents of a journal
+Usage:    journal [handle]
+Examples: journal; journal DAV
+_____________________________________________________________________
+Command:  jsave
+Purpose:  save games to your journal
+Usage:    jsave slot [game_number | user_name [game_number | journal_slot |
+          user_name]]
+Examples: jsave A; jsave D 34; jsave F Friar 3; jsave C Sparky L;
+          jsave J jross bozky
+_____________________________________________________________________
+Command:  kibitz
+Purpose:  send message to all players and observers of a chess match
+Usage:    kibitz message
+Examples: kibitz What about Bxc6???
+_____________________________________________________________________
+Command:  limits
+Purpose:  display current server limits and settings
+Usage:    limits
+Examples: limits
+_____________________________________________________________________
+Command:  llogons
+Purpose:  lists recent logons and logoffs for the server
+Usage:    llogons
+Examples: llogons
+_____________________________________________________________________
+Command:  logons
+Purpose:  lists recent logons/logoffs for the user
+Usage:    logons [user]
+Examples: logons
+_____________________________________________________________________
+Command:  mailhelp
+Purpose:  email a help file to you (or show files that can be emailed)
+Usage:    mailhelp [filename]
+Examples: mailhelp; mailhelp intro_welcome
+_____________________________________________________________________
+Command:  mailmess
+Purpose:  email your stored messages to you
+Usage:    mailmess
+Examples: mailmess
+_____________________________________________________________________
+Command:  mailmess
+Purpose:  email 1 or more of your your stored messages to you
+Usage:    mailmess [user|#|#-#]
+Examples: mailmess; mailmess fpawn; mailmess 4; mailmess 7-11
+_____________________________________________________________________
+Command:  mailoldmoves
+Purpose:  email to you the moves from a completed game
+Usage:    mailoldmoves [user]
+Examples: mailoldmoves; mailoldmoves loon
+[NOTE:    mailstored is a better command to use]
+_____________________________________________________________________
+Command:  mailsource
+Purpose:  email to you a sourcecode file -OR- list sourcecode files
+Usage:    mailsource [filename]
+Examples: mailsource formula.c
+_____________________________________________________________________
+Command:  mailstored
+Purpose:  email a stored, history or journal game to you
+Usage:    mailstored player1  [#, player2, journal_slot]
+Examples: mailstored Len; mailstored Len 87; mailstored Len fpawn;
+          mailstored Len K
+_____________________________________________________________________
+Command:  match
+Purpose:  challenge a user to a chess match
+Usage:    match user [rated|unrated] [Start] [Inc] [Black_Start Black_Inc]
+          [White|Black] [board_category board]
+Examples: match foxbat; match Marsalis 2 15 u
+_____________________________________________________________________
+Command:  messages
+Purpose:  display 1 or more stored messages -OR- send a message to a user
+Usage:    messages [user [text]|#|m-n]
+Examples: messages; messages Shane; messages Ramius Thanks for your help!;
+          messages 13; messages 2-9
+_____________________________________________________________________
+Command:  mexamine
+Purpose:  allow another user to examine a game with you
+Usage:    mexamine user
+Examples: mexamine connex
+_____________________________________________________________________
+Command:  moretime
+Purpose:  add more seconds to your opponent's clock
+Usage:    moretime seconds
+Examples: moretime 90
+_____________________________________________________________________
+Command:  moves
+Purpose:  displays moves to a current game
+Usage:    moves [game,user]
+Examples: moves; moves 56; moves Cthulhu
+_____________________________________________________________________
+Command:  news
+Purpose:  list recent news items -OR- display details of a news item
+Usage:    news [all|#[-#]]
+Examples: news; news all; news 11; news 35-50
+_____________________________________________________________________
+Command:  next
+Purpose:  display further information from a long text file
+Usage:    next
+Examples: next
+_____________________________________________________________________
+Command:  observe
+Purpose:  add (or remove) a game from your observation list (toggles ON/OFF)
+Usage:    observe game|user
+Examples: observe 34; observe GMAnand
+_____________________________________________________________________
+Command:  oldmoves
+Purpose:  display moves of the user's last played chess match
+Usage:    oldmoves [user]
+Examples: oldmoves; oldmoves TheDane
+[NOTE:    smoves is a better command to use]
+_____________________________________________________________________
+Command:  open
+Purpose:  toggles your open variable on/off (1/0)
+Usage:    open
+Examples: open
+_____________________________________________________________________
+Command:  partner
+Purpose:  ask a user to be your bughouse partner
+Usage:    partner handle
+Examples: partner Rattlesnake
+_____________________________________________________________________
+Command:  password
+Purpose:  change your current server password to a new password
+Usage:    password oldpassword newpassword
+Examples: password old new
+_____________________________________________________________________
+Command:  pause
+Purpose:  requests (or accepts) a pause during a chess match
+Usage:    pause
+Examples: pause
+_____________________________________________________________________
+Command:  pending
+Purpose:  lists all your non-declined offers from and made to users
+Usage:    pending
+Examples: pending
+_____________________________________________________________________
+Command:  pfollow
+Purpose:  Automatically observe all of a user's partner's bughouse games.
+Usage:    pfollow user; pfollow
+Examples: pfollow Binford; pfollow
+_____________________________________________________________________ 
+Command:  play
+Purpose:  respond to a seek ad that has been placed
+Usage:    play #|user
+Examples: play 3; play hersco
+_____________________________________________________________________
+Command:  pobserve
+Purpose:  observe bughouse games of a user's partner
+Usage:    pobserve user
+Examples: pobserve GMAnand
+_____________________________________________________________________
+Command:  prefresh
+Purpose:  refresh (display) your bughouse partner's game
+Usage:    prefresh
+Examples: prefresh
+_____________________________________________________________________
+Command:  primary
+Purpose:  designate which game is 'primary' for purposes of observation
+Usage:    primary name|#
+Examples: primary DAV; primary 21
+_____________________________________________________________________
+Command:  promote
+Purpose:  set the piece a pawn will be promoted to at the back rank
+Usage:    promote {q,r,b,[kn]}
+Examples: promote q; promote b
+_____________________________________________________________________
+Command:  pstat
+Purpose:  display previous results between two users
+Usage:    pstat [user1 [user2]]
+Examples: pstat; pstat Sparky; pstat DAV Thanatos;
+_____________________________________________________________________
+Command:  ptell
+Purpose:  send a message to your bughouse partner
+Usage:    ptell string
+Examples: ptell Can you get me a pawn?
+_____________________________________________________________________
+Command:  ptime
+Purpose:  display the clock times in your bughouse partner's game
+Usage:    ptime
+Examples: ptime
+_____________________________________________________________________
+Command:  quit
+Purpose:  exit the server (when you are not playing a match)
+Usage:    quit
+Examples: quit
+_____________________________________________________________________
+Command:  rank
+Purpose:  display rank for user, rating or range of users by rank
+Usage:    rank [user [b][s][l][w][B][S]] -OR- rank m-n [b][s][l][w][B][S] -OR-
+          rank m [b][s][l][w][B][S]]                     [default: bsl]
+Examples: rank; rank zippy; rank 50-100; rank 1800; rank sB
+_____________________________________________________________________
+Command:  refresh
+Purpose:  display the position and time of a game you are involved with
+Usage:    refresh [game|name]
+Examples: refresh; refresh 45; refresh IanO
+_____________________________________________________________________
+Command:  resign
+Purpose:  give your opponent the win in your current (or stored) game
+Usage:    resign [name]
+Examples: resign; resign Sparky
+_____________________________________________________________________
+Command:  resume
+Purpose:  challenge all online users of your adjourned games
+Usage:    resume
+Examples: resume
+_____________________________________________________________________
+Command:  revert
+Purpose:  return to the mainline of a chess game being examined (analyzed)
+Usage:    revert
+Examples: revert
+_____________________________________________________________________
+Command:  say
+Purpose:  sends a message to your current or most recent opponent
+Usage:    say message
+Examples: say I have terrible lag right now <sigh>.
+_____________________________________________________________________
+Command:  seek
+Purpose:  place an ad for a certain type of chess match
+Usage:    seek [time inc] [rated|unrated] [white|black] [w#] [auto|manual]
+          [formula] [rating-range]
+Examples: seek; seek 5; seek 2 12; seek u; seek w; seek w2; seek m; seek f; 
+          seek 1800-2100; seek 10 20 r b m f 2000-2200
+_____________________________________________________________________
+Command:  set
+Purpose:  fix a value of a variable or line in your finger notes
+Usage:    set variable_name [value]
+Examples: set shout 0; set time 5; set inc 0; set formula !wild && rated;
+          set 1 G'day!  I'm Mark from Perth, Australia.
+_____________________________________________________________________
+Command:  shout
+Purpose:  send message to all users open to receive shouts
+Usage:    shout message
+Examples: shout Time to go!  Bye-bye!!!
+_____________________________________________________________________
+Command:  showlist
+Purpose:  display users who are on special lists
+Usage:    showlist [list_name]
+Alt:      =[list_name]
+Examples: showlist; =; showlist computers; =computers
+_____________________________________________________________________
+Command:  simabort
+Purpose:  used in simuls to request (or accept) an abort of a game
+Usage:    simabort
+Examples: simabort
+_____________________________________________________________________
+Command:  simadjourn
+Purpose:  used in simuls to request (or accept) an adjournment of a game
+Usage:    simadjourn
+Examples: simadjourn
+_____________________________________________________________________
+Command:  simallabort
+Purpose:  used in simuls to abort all games in progress
+Usage:    simallabort
+Examples: simallabort
+_____________________________________________________________________
+Command:  simalladjourn
+Purpose:  used in simuls to adjourn all games in progress
+Usage:    simalladjourn
+Examples: simalladjourn
+_____________________________________________________________________
+Command:  simgames
+Purpose:  display the number of simul games you or another user are in
+Usage:    simgames [player]
+Examples: simgames; simgames river
+_____________________________________________________________________
+Command:  simmatch
+Purpose:  used to request a game in a simul event
+Usage:    simmatch player
+Examples: simmatch connex
+_____________________________________________________________________
+Command:  simnext
+Purpose:  used in simuls to move to the next board in the simul
+Usage:    simnext
+Examples: simnext
+_____________________________________________________________________
+Command:  simobserve
+Purpose:  observe games of a simul holder
+Usage:    simobserve user
+Examples: simobserve GMAnand
+_____________________________________________________________________
+Command:  simopen
+Purpose:  sets yourself open to receive simul challenges
+Usage:    simopen
+Examples: simopen
+_____________________________________________________________________
+Command:  simpass
+Purpose:  used in simuls to pass when the simul player reaches your board
+Usage:    simpass
+Examples: simpass
+_____________________________________________________________________
+Command:  simprev
+Purpose:  used in simuls to move to the previous board
+Usage:    simprev
+Examples: simprev
+_____________________________________________________________________
+Command:  smoves
+Purpose:  display the moves of a stored, history or journal game
+Usage:    smoves UserA [#, UserB, journal_slot]
+Examples: smoves TheDane; smoves TheDane 87; smoves TheDane bozky;
+          smoves TheDane J
+_____________________________________________________________________
+Command:  smposition
+Purpose:  display both position and moves for a stored, history or journal 
+          game
+Usage:    smposition user_a [user_b|history#|journal_slot]
+Examples: smposition  Len; smposition Len Loon; smposition Len 86; 
+          smposition Len B
+_____________________________________________________________________ 
+Command:  sought
+Purpose:  display seek ads, either all ads or just those you qualify for
+Usage:    sought [all]
+Examples: sought; sought all
+_____________________________________________________________________
+Command:  sposition
+Purpose:  display position for a stored, history or journal game
+Usage:    sposition user_a [user_b|history#|journal_slot]
+Examples: sposition  Len; sposition Len Loon; sposition Len 86; 
+          sposition Len B
+_____________________________________________________________________
+Command:  statistics
+Purpose:  display summary information about ratings of server players
+Usage:    statistics [user]
+Examples: statistics
+_____________________________________________________________________
+Command:  stored
+Purpose:  list your or another user's stored (adjourned) games
+Usage:    stored [user]
+Examples: stored; stored Marsalis
+_____________________________________________________________________
+Command:  style
+Purpose:  set the style variable for the board display
+Usage:    style n
+Examples: style 12
+_____________________________________________________________________
+Command:  sublist
+Purpose:  removes information from the given list
+Usage:    sublist list information
+Alt:      -list information
+Examples: sublist notify Friar; -notify Friar
+_____________________________________________________________________
+Command:  switch
+Purpose:  requests (or accepts) switching sides with your opponent
+Usage:    switch
+Examples: switch
+_____________________________________________________________________
+Command:  takeback
+Purpose:  requests (or accepts) taking back one or more moves in a game
+Usage:    takeback [n]     [default: 1]
+Examples: takeback; takeback 2
+_____________________________________________________________________
+Command:  tell
+Purpose:  send a message to an individual user
+Usage:    tell user message
+Examples: tell mann How do I set up xboard?
+_____________________________________________________________________
+Command:  time
+Purpose:  displays the current clock time for a game in progress
+Usage:    time [game, user]
+Examples: time; time 45; time Hawk
+_____________________________________________________________________
+Command:  tomove
+Purpose:  used in setup mode in order to designate which side will move next
+Usage:    tomove white|black
+Examples: tomove white; tomove black
+_____________________________________________________________________
+Command:  unalias
+Purpose:  removes a personal alias you had created previously
+Usage:    unalias word
+Examples: unalias chal; unalias t1
+_____________________________________________________________________
+Command:  unexamine
+Purpose:  stop your examination of a game
+Usage:    unexamine
+Examples: unexamine
+_____________________________________________________________________
+Command:  unobserve
+Purpose:  remove a game (or all games) from your observation list
+Usage:    unobserve [game,user]
+Examples: unobserve 25; unobserve GMKasparov; unobserve (removes all games)
+_____________________________________________________________________
+Command:  unpause
+Purpose:  restarts the clocks for a game that had been paused
+Usage:    unpause
+Examples: unpause
+_____________________________________________________________________ 
+Command:  unseek
+Purpose:  remove a seek ad (or all seek ads) that you have placed
+Usage:    unseek [#]
+Examples: unseek; unseek 5
+_____________________________________________________________________
+Command:  uptime
+Purpose:  displays some server statistics, such as time in operation
+Usage:    uptime
+Examples: uptime
+_____________________________________________________________________
+Command:  ustat
+Purpose:  display server statistics for last 24 hour period
+Usage:    ustat
+Examples: ustat
+_____________________________________________________________________
+Command:  variables
+Purpose:  display the variable settings for yourself or another user
+Usage:    variables [user]
+Examples: variables; variables McKeork
+_____________________________________________________________________
+Command:  whenshut
+Purpose:  display whether a shutdown is in progress and, if so, when it will
+          occur
+Usage:    whenshut
+Examples: whenshut
+_____________________________________________________________________
+Command:  whisper
+Purpose:  send a message to observers of a game but NOT to the players
+Usage:    whisper message
+Examples: whisper But why can't White just take the pawn?!
+_____________________________________________________________________
+Command:  who
+Purpose:  lists all or a subset of current users on the server
+Usage:    who [o][r][f][a][R][U][s][b][w][L][A][l][t][v][n][#i#j][B]
+Examples: who; who 19; who s; who a; who B; who as; who asA; who a15
+_____________________________________________________________________
+Command:  withdraw
+Purpose:  remove an offer you had previously made to another user
+Usage:    withdraw [1-n, all, abort, adjourn, draw, match, pause, player,
+          simul, switch, takeback]
+Examples: withdraw 3; withdraw pause; withdraw Shaughn
+_____________________________________________________________________
+Command:  xkibitz
+Purpose:  send a message to a game, regardless of 'primary' setting
+Usage:    xkibitz name|# message 
+Examples: xkibitz sms Nb4 works; xkibitz 34 Dead draw now.
+_____________________________________________________________________
+Command:  xtell
+Purpose:  send a message to a user, but not affect current "tell" setting
+Usage:    xtell user message
+Examples: xtell sms Thanks for your help!
+_____________________________________________________________________
+Command:  xwhisper
+Purpose:  send a message to observers of a game, regardless of 'primary'
+          setting
+Usage:    xwhisper name|# message 
+Examples: xwhisper sms Nb4 works; xkibitz 34 Dead draw now.
+_____________________________________________________________________
+Command:  znotify 
+Purpose:  display current users on your notify list, and users for whom you
+          are on their notify lists, with idle times (unless supressed)
+Usage:    znotify [n]
+Examples: znotify; znotify n
+_____________________________________________________________________
+[end of usage manual]
