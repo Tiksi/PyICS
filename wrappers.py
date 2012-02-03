@@ -19,17 +19,17 @@ class constrng()  #i don't think  need to initialize all of these, but i forgot 
 		
 		 
 	def timer:
-		#get timer from timer.c
+		#get timer functions from timer.c for most of the time fucntions (and there are a few)
 		
 	def positions:
 		#read the last move and change array values accordingly ?
 		# this is what they look like at the begining of turn 1
-		pos1 = [R,K,B,Q,K,B,K,N]
+		pos1 = [R,K,B,K,Q,B,K,N]
 		pos2 = [P,P,P,P,P,P,P,P]
 		pos3 = [-,-,-,-,-,-,-,-]
 		pos4 = [-,-,-,-,-,-,-,-]
 		pos5 = [-,-,-,-,-,-,-,-]
 		pos6 = [-,-,-,-,-,-,-,-]		
 		pos7 = [p,p,p,p,p,p,p,p]
-		pos8 = [r,k,b,k,q,b,k,r]
+		pos8 = [r,k,b,q,k,b,k,r]
 
