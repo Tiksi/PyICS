@@ -13,8 +13,23 @@ positions = [pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8]  # each position is
 
 class constrng()  #i don't think  need to initialize all of these, but i forgot how to code
 	def __init__(self, number, positions, color, push, ws, wl, bs, bl, drawnum, gamenum, wname, bname, relation, stime, ctime, wpt, bpt, srt, brt, move, coords, turn_time, notes, flip):
-		number = '<'x'>'				
+		
+	def number:
+		#increase turn number every two turns
 		
 		 
 	def timer:
+		#get timer from timer.c
 		
+	def positions:
+		#read the last move and change array values accordingly ?
+		# this is what they look like at the begining of turn 1
+		pos1 = [R,K,B,Q,K,B,K,N]
+		pos2 = [P,P,P,P,P,P,P,P]
+		pos3 = [-,-,-,-,-,-,-,-]
+		pos4 = [-,-,-,-,-,-,-,-]
+		pos5 = [-,-,-,-,-,-,-,-]
+		pos6 = [-,-,-,-,-,-,-,-]		
+		pos7 = [p,p,p,p,p,p,p,p]
+		pos8 = [r,k,b,k,q,b,k,r]
+
